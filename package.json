@@ -6,11 +6,25 @@
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.1",
     "@testing-library/user-event": "^12.2.2",
+    "animate.css": "^4.1.1",
+    "antd": "^4.8.5",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "js-cookie": "^2.2.1",
+    "particles-bg": "^2.5.0",
     "react": "^17.0.1",
+    "react-cookies": "^0.1.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
+    "react-slick": "^0.27.13",
+    "react-starry-sky": "^1.0.0",
+    "redux": "^4.0.5",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^0.2.4"
   },
+  "homepage": ".",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -34,5 +48,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:3000"
 }

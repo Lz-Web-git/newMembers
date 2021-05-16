@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#root{
+    width: 100%;
+    height: 100%;
+}
+.Page{
+    width: 100%;
+    height: 100%;
+}
+.process{
+    width: 85%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    font-size: large;
+    flex-direction: column;
+}
+.stu_inform{
+    width: 87%;
+    margin:0 auto;
+}
+.attendForm > div{
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+
+}
+.baoming{
+    width: 200px;
+    height: 80px;
+    margin-top: 85px;
+    margin-left: 90px;
+}
+.baoming > button{
+    width: 150px;
+    height: 40px;
+    font-size: large;
+    font-weight: bold;
+}

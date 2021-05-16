@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+        *{
+            margin:0;
+            padding:0;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        form{
+            width: 90%;
+            margin: 0 auto;
+        }
+        form>div{
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            border: 1px solid black;
+            outline: 0;
+        }
+        .btn{
+            margin-top: 10px;
+        }
+   </style>
+</head>
+<body>
+    <div class="user_Data">
+            
+            <form action = "/modifymsg" method="POST" class="modify">
+                <h2>用户信息</h2>
+                <div><span>专业班级:</span> <span><input type="text" name="major" value={{data.major}} ></input></span></div>
+                <div><span>姓名：</span><span><input type="text" name="name" value={{data.name}}></input></span></div>
+                <div><span>学号</span><span><input type="text" name="school_num" value={{data.school_num}}></input></span></div>
+                <div><span>方向</span><span><input type="text" name="direact" value={{data.direact}}></input></span></div>
+                <div><span>手机号</span><span><input type="text" name="tel_num" value={{data.tel_num}}></input></span></div>
+                <div><span>qq邮箱</span><span><input type="text" name="email" value={{data.email}} readonly="readonly"></input></span></div>
+                <div><span>面数进度</span><span><input type="text" name="process" value={{data.process}} ></input></span></div>
+                <input type="submit" value="立即修改" class="btn"></input>
+            </form>  
+         </div>    
+</body>
+</html>

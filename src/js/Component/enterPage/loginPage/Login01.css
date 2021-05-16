@@ -1,0 +1,59 @@
+/* 消除一些默认样式 */
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+#root{
+    position: relative;
+    width: 100%;
+}
+.rootSon{
+    position:fixed; 
+    top: 0; 
+    left: 0; 
+    background-color: #4fd2c4;
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 130px;
+    background: url('./logo.jpg') no-repeat;
+    background-size: 100% 100%;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.Positon{
+    width:85%;
+    margin: 5px auto;
+    background-color: white;
+
+}
+h2{
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+form>div{
+    font-size: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+input{
+    width: 200px;
+    outline: none;
+    border: 2px solid #4fd2c4;
+    margin-left: 10px;
+}
+#Password{
+    width: 75px;
+    margin-right:23px;
+}
+.denglu > button{
+    margin-right: 61px;
+}
