@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>纳新管理系统页面</title>
+    <!-- 问题：如何在express中使用模板渲染引擎 -->
+    <style>
+        *{
+            margin:0;
+            border: 0;
+            padding: 0;
+        }
+        #whole{
+            margin: 10px 20px;
+            border-top: 1px solid blue;
+        }
+        h2{
+            padding-top: 5px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+        }
+        .tHead,
+        .user_Data{
+            display: flex;
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+        }
+        div>span{
+            flex:1;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color:red;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div id="whole">
+        <h2>纳新管理员管理页面</h2>
+        <div class="tHead">
+            <span>专业班级</span><span>姓名</span><span>学号</span><span>方向</span><span>手机号</span><span>qq邮箱</span><span>面试进度</span><span>修改信息</span>
+        </div>
+        {{each data}}
+            <div class="user_Data">
+            <span>{{$value.major}}</span><span>{{$value.name}}</span><span>{{$value.school_num}}</span>
+            <span>{{$value.direact}}</span><span>{{$value.tel_num}}</span><span>{{$value.email}}</span>
+            <span>{{$value.process}}</span>
+            <span><a href="./modify?email={{$value.email}}">去修改</a></span>
+            </div>
+        {{/each}}
+    <div>
+</body>
+</html>
